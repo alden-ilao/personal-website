@@ -1,24 +1,12 @@
-import { links as tabItems } from "../lib/data";
-import { ReactNode, useState } from "react";
 import { motion } from "framer-motion";
 
-type TabProps = {
-  isSelected: boolean;
-  onSelect: (index: number) => void;
-  children?: ReactNode;
-};
-
-const Tab = ({ children, isSelected }: TabProps) => {
-  return <li>{children}</li>;
-};
+// type TabProps = {
+//   isSelected: boolean;
+//   onSelect: (index: number) => void;
+//   children?: ReactNode;
+// };
 
 const Header = () => {
-  const [activeTab, setActiveTab] = useState(0);
-
-  const onSelectHandler = (index: number) => {
-    setActiveTab(index);
-  };
-
   return (
     <header className="relative z-[999]">
       <motion.div
