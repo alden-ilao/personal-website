@@ -12,6 +12,9 @@ const RootLayout: FC = () => {
       <Header />
       <Outlet></Outlet>
       <Footer />
+      <div id="DELETE" className="flex h-[300vh] items-center justify-center">
+        <p id="DELETE-CONTENT">DELETE</p>
+      </div>
     </div>
   );
 };
