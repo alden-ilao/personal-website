@@ -1,7 +1,5 @@
 import { motion } from "framer-motion";
-import { links as tabItems } from "../lib/data";
-
-import { NavLink } from "react-router-dom";
+import Navbar from "./Navbar";
 
 const Header = () => {
   return (
@@ -15,21 +13,12 @@ const Header = () => {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5 }}
       >
-        <nav className="flex flex-1 place-items-center">
-          <menu
-            id="tabs"
-            className="flex flex-1 flex-row flex-wrap justify-around gap-[1rem] p-[1rem] font-medium text-gray-500 sm:flex-nowrap"
-          >
-            {tabItems.map((tab) => {
-              return (
-                <li key={tab.hash}>
-                  <a href={`/${tab.hash}`}>{tab.name}</a>
-                </li>
-              );
-            })}
-          </menu>
-        </nav>
+        <Navbar />
       </motion.div>
+
+      <div className="flex justify-end">
+        <motion.div layoutId="blue" className="h-10 w-10 rounded-full bg-red-500"></motion.div>
+      </div>
     </header>
   );
 };
