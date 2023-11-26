@@ -19,7 +19,7 @@ const item: Variants = {
 
 const Intro = () => {
   return (
-    <section id="intro">
+    <section>
       <div className="flex justify-center">
         <motion.div
           className="relative"

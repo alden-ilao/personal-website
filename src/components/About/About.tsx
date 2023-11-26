@@ -5,7 +5,8 @@ import { variantOpacityShiftUp } from "../../utils/framer-variants";
 const About = () => {
   return (
     <motion.section
-      className="mb-28 mt-28 max-w-[50rem] text-center leading-8 sm:mb-40 sm:mt-0"
+      id={"about"}
+      className="mb-28 mt-28 max-w-[50rem] scroll-mt-44 text-center leading-8 sm:mb-40 sm:mt-0"
       variants={variantOpacityShiftUp}
       initial="hidden"
       animate="show"

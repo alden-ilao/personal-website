@@ -23,7 +23,7 @@ const Header = () => {
             {tabItems.map((tab) => {
               return (
                 <li key={tab.hash}>
-                  <NavLink to={"#DELETE-CONTENT"}>{tab.name}</NavLink>
+                  <a href={`/${tab.hash}`}>{tab.name}</a>
                 </li>
               );
             })}

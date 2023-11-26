@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const Projects = () => {
   return (
-    <section>
+    <section id={"projects"} className="scroll-mt-44">
       <SectionHeading>My projects</SectionHeading>
       <div>
         {projectData.map((project, index) => (
