@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Variants, motion } from "framer-motion";
 import { BsArrowRight, BsLinkedin, BsDownload } from "react-icons/bs";
+import useActiveSection from "../../lib/hooks/useActiveSection";
 
 const containerAnimations: Variants = {
   hidden: { opacity: 0 },
@@ -18,6 +19,8 @@ const item: Variants = {
 };
 
 const Intro = () => {
+  const ref = useActiveSection("Home", 0.6);
+
   return (
     <section>
       <div className="flex justify-center">
@@ -46,6 +49,7 @@ const Intro = () => {
         </motion.div>
       </div>
       <motion.h2
+        ref={ref}
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}

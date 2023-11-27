@@ -3,10 +3,13 @@ import { projectData } from "../../lib/data";
 import SectionHeading from "../UI/SectionHeading";
 import { useScroll, motion, useTransform } from "framer-motion";
 import { Link } from "react-router-dom";
+import useActiveSection from "../../lib/hooks/useActiveSection";
 
 const Projects = () => {
+  const ref = useActiveSection("Projects", 0.7);
+
   return (
-    <section id={"projects"} className="scroll-mt-44">
+    <section id={"projects"} ref={ref} className="scroll-mt-44">
       <SectionHeading>My projects</SectionHeading>
       <div>
         {projectData.map((project, index) => (

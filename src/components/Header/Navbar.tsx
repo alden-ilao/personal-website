@@ -22,6 +22,7 @@ const Navbar = () => {
                 href={`/${tab.hash}`}
                 onClick={() => {
                   ctx.setSelectedSection(tab.name);
+                  ctx.setTimeOfLastClick(Date.now());
                 }}
               >
                 {tab.name}
