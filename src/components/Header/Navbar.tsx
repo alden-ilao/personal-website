@@ -1,11 +1,10 @@
-import { useState } from "react";
 import { links as tabItems } from "../../lib/data";
-import { motion } from "framer-motion";
+import { useContext } from "react";
 import clsx from "clsx";
+import { ActiveSectionContext } from "../../context/active-section-context";
 
 const Navbar = () => {
-  const [selectedSection, setSelectedSection] = useState(`${tabItems[0].name}`);
-
+  const ctx = useContext(ActiveSectionContext);
   return (
     <nav className="flex flex-1">
       <menu
@@ -13,7 +12,7 @@ const Navbar = () => {
         className="flex flex-1 flex-row flex-wrap justify-around gap-[0.5rem] p-[1rem] font-medium text-gray-500 sm:flex-nowrap"
       >
         {tabItems.map((tab) => {
-          const isActive = selectedSection === tab.name;
+          const isActive = ctx.selectedSection === tab.name;
           return (
             <li
               key={tab.name}
@@ -22,16 +21,13 @@ const Navbar = () => {
               <a
                 href={`/${tab.hash}`}
                 onClick={() => {
-                  setSelectedSection(tab.name);
+                  ctx.setSelectedSection(tab.name);
                 }}
               >
                 {tab.name}
               </a>
               {isActive && (
-                <span
-                  layoutId="billid"
-                  className="absolute inset-0 -z-10 rounded-full bg-gray-500"
-                ></span>
+                <span className="absolute inset-0 -z-10 rounded-full bg-gray-500"></span>
               )}
             </li>
           );
