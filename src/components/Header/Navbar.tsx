@@ -6,7 +6,7 @@ import { ActiveSectionContext } from "../../context/active-section-context";
 const Navbar = () => {
   const ctx = useContext(ActiveSectionContext);
   return (
-    <nav className="flex flex-1">
+    <nav className="flex flex-1 place-items-center">
       <menu
         id="tabs"
         className="flex flex-1 flex-row flex-wrap justify-around gap-[0.5rem] p-[1rem] font-medium text-gray-500 sm:flex-nowrap"
