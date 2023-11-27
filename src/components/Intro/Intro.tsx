@@ -19,10 +19,10 @@ const item: Variants = {
 };
 
 const Intro = () => {
-  const ref = useActiveSection("Home", 0.6);
+  const ref = useActiveSection("Home", 0.5);
 
   return (
-    <section>
+    <section className="lg:mt-32 xl:mt-3 2xl:mt-72">
       <div className="flex justify-center">
         <motion.div
           className="relative"

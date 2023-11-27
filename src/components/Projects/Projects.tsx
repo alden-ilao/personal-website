@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import useActiveSection from "../../lib/hooks/useActiveSection";
 
 const Projects = () => {
-  const ref = useActiveSection("Projects", 0.6);
+  const ref = useActiveSection("Projects", 0.65);
 
   return (
     <section id={"projects"} ref={ref} className="mb-28 scroll-mt-44">
