@@ -1,4 +1,3 @@
-import React from "react";
 import { skillsData } from "../../lib/data";
 import SectionHeading from "../UI/SectionHeading";
 import useActiveSection from "../../lib/hooks/useActiveSection";

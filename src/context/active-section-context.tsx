@@ -1,4 +1,4 @@
-import React, { useState, PropsWithChildren, FC, createContext } from "react";
+import { useState, PropsWithChildren, FC, createContext } from "react";
 import { SectionName } from "../lib/types";
 import { links as tabItems } from "../lib/data";
 
