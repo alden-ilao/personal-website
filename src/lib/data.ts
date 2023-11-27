@@ -42,3 +42,21 @@ export const projectData = [
     imageUrl: mealsImg,
   },
 ] as const;
+
+export const skillsData = [
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "TypeScript",
+  "React",
+  "Node.js",
+  "Git",
+  "Tailwind",
+  "Jest",
+  "React Query",
+  "Redux",
+  "Framer Motion",
+  "express",
+  "SQL",
+  "Azure Dev Ops",
+] as const;

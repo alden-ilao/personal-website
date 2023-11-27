@@ -12,7 +12,7 @@ const useActiveSection = (sectionName: SectionName, threshold: number = 0.75) =>
   const { setSelectedSection, timeOfLastClick } = useContext(ActiveSectionContext);
 
   useEffect(() => {
-    if (inView && Date.now() - timeOfLastClick > 100) {
+    if (inView && Date.now() - timeOfLastClick > 1000) {
       setSelectedSection(sectionName);
     }
   }, [inView, timeOfLastClick, setSelectedSection, sectionName]);

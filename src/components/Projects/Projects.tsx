@@ -9,7 +9,7 @@ const Projects = () => {
   const ref = useActiveSection("Projects", 0.7);
 
   return (
-    <section id={"projects"} ref={ref} className="scroll-mt-44">
+    <section id={"projects"} ref={ref} className="mb-28 scroll-mt-44">
       <SectionHeading>My projects</SectionHeading>
       <div>
         {projectData.map((project, index) => (

@@ -1,6 +1,5 @@
 import { Outlet } from "react-router-dom";
 import Header from "../components/Header/Header";
-import Footer from "../components/Footer";
 import { FC } from "react";
 import ActiveSectionContextProvider from "../context/active-section-context";
 
@@ -14,7 +13,6 @@ const RootLayout: FC = () => {
         <Header />
         <Outlet></Outlet>
       </ActiveSectionContextProvider>
-      <Footer />
     </div>
   );
 };
