@@ -15,10 +15,6 @@ const Header = () => {
       >
         <Navbar />
       </motion.div>
-
-      <div className="flex justify-end">
-        <motion.div layoutId="blue" className="h-10 w-10 rounded-full bg-red-500"></motion.div>
-      </div>
     </header>
   );
 };

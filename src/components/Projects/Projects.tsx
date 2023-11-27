@@ -37,8 +37,8 @@ const Project = ({ title, description, tags, imageUrl }: ProjectProps) => {
         sm:mb-8 "
     >
       <Link to={"about:blank"} target="_blank">
-        <section className=" relative mx-auto max-w-[42rem] overflow-hidden rounded-lg border border-black/5 bg-gray-100 transition even:pl-8 hover:bg-gray-200 sm:h-[20rem] sm:pr-8">
-          <div className="flex h-full flex-col py-5 pt-4 sm:max-w-[50%] sm:pb-8 sm:pl-10 sm:pr-2 sm:group-even:ml-[20rem]">
+        <section className=" relative mx-auto max-w-[42rem] overflow-hidden rounded-lg border border-black/5 bg-gray-100 pr-8 transition even:pl-8 hover:bg-gray-200 sm:h-[20rem]">
+          <div className="flex h-full flex-col py-5 pl-10 pt-4 sm:max-w-[50%] sm:pb-8 sm:pr-2 sm:group-even:ml-[20rem]">
             <h3 className="text-2xl font-semibold">{title}</h3>
             <p className="mt-2 leading-relaxed text-gray-700">{description}</p>
             <ul className="mt-6 flex flex-wrap gap-2 sm:mt-auto">
