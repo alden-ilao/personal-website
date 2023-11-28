@@ -1,7 +1,7 @@
-import { Link } from "react-router-dom";
 import { Variants, motion } from "framer-motion";
-import { BsArrowRight, BsLinkedin, BsDownload } from "react-icons/bs";
+import { BsLinkedin, BsDownload } from "react-icons/bs";
 import useActiveSection from "../../lib/hooks/useActiveSection";
+import profilePic from "../../assets/linked_in_profile_pic.jpg";
 
 const containerAnimations: Variants = {
   hidden: { opacity: 0 },
@@ -22,7 +22,7 @@ const Intro = () => {
   const ref = useActiveSection("Home", 0.5);
 
   return (
-    <section className="lg:mt-32 xl:mt-3 2xl:mt-72">
+    <section className="lg:mt-32 xl:mt-36 2xl:mt-72">
       <div className="flex justify-center">
         <motion.div
           className="relative"
@@ -31,7 +31,7 @@ const Intro = () => {
           transition={{ duration: 0.5 }}
         >
           <img
-            src="https://images.unsplash.com/photo-1627796795540-18e2db6d3908?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+            src={profilePic}
             alt="profile image"
             className="aspect-square w-24 rounded-full border-4 border-solid  border-white object-cover shadow-2xl"
           />
@@ -67,19 +67,19 @@ const Intro = () => {
         className="flex flex-col justify-center gap-2 text-lg font-medium sm:flex-row"
       >
         <motion.div variants={item}>
-          <Link
+          {/* <Link
             to={"#contact"}
             className="group flex items-center justify-center gap-2 rounded-full bg-gray-900 px-7  py-3 text-white transition hover:scale-110 focus:scale-110 active:scale-110"
           >
             Contact me here{" "}
             <BsArrowRight className="opacity-75 transition  group-hover:translate-x-1" />
-          </Link>
+          </Link> */}
         </motion.div>
         <motion.div variants={item}>
           <a
             href="/Resume.pdf"
             target="_blank"
-            className="group flex items-center justify-center gap-2 rounded-full border border-black/10 bg-white px-7 py-3 transition hover:scale-110 focus:scale-110 active:scale-110"
+            className="group flex items-center justify-center gap-2 rounded-full border border-black/10 bg-gray-900 px-7 py-3 text-white transition hover:scale-110 focus:scale-110 active:scale-110"
             download
           >
             Download CV <BsDownload className="opacity-75 transition group-hover:translate-y-1" />

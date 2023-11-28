@@ -6,7 +6,7 @@ import Skills from "../components/Skills/Skills";
 
 const MainPage = () => {
   return (
-    <main id="home" className="mx-auto w-[80%] max-w-[50rem] scroll-mt-44 text-lg">
+    <main id="home" className="mx-auto w-[80%] max-w-[50rem] scroll-mt-[50rem] text-lg">
       <Intro />
       <SectionDivider />
       <About />
