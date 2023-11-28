@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
 import { Variants, motion } from "framer-motion";
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { BsArrowRight, BsLinkedin, BsDownload } from "react-icons/bs";
 import useActiveSection from "../../lib/hooks/useActiveSection";
 import profilePic from "../../assets/linked_in_profile_pic.jpg";
