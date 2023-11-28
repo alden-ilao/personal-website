@@ -17,7 +17,7 @@ const About = () => {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-4">
-        I'm a passionate individual with a keen interest on e-commerce technologies and turning
+        I'm a passionate individual with a keen interest on emmerging web technologies and turning
         design concepts into responsive and interactive websites. Having graduated in computer
         science, I aspire to dive deeper into the world of web development.
       </p>
