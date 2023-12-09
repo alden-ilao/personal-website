@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { projectData } from "../../lib/data";
 import SectionHeading from "../UI/SectionHeading";
 import { useScroll, motion, useTransform } from "framer-motion";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom"; termporary disable
 import useActiveSection from "../../lib/hooks/useActiveSection";
 
 const Projects = () => {
@@ -39,7 +39,7 @@ const Project = ({ title, description, tags, imageUrl }: ProjectProps) => {
         last:mb-0
         sm:mb-8 "
     >
-      <Link to={"about:blank"} target="_blank">
+      <>
         <section className=" relative mx-auto max-w-[42rem] overflow-hidden rounded-lg border border-black/5 bg-gray-100 pr-8 transition even:pl-8 hover:bg-gray-200 sm:h-[20rem]">
           <div className="flex h-full flex-col py-5 pl-10 pt-4 sm:max-w-[50%] sm:pb-8 sm:pr-2 sm:group-even:ml-[20rem]">
             <h3 className="text-2xl font-semibold">{title}</h3>
@@ -71,7 +71,8 @@ const Project = ({ title, description, tags, imageUrl }: ProjectProps) => {
         sm:group-hover:-translate-x-3 sm:group-hover:translate-y-3 sm:group-hover:-rotate-2 sm:group-hover:scale-105 sm:group-even:group-hover:translate-x-3 sm:group-even:group-hover:translate-y-3 sm:group-even:group-hover:rotate-2"
           />
         </section>
-      </Link>
+      </>{" "}
+      {/** temporarily disabled link */}
     </motion.div>
   );
 };
